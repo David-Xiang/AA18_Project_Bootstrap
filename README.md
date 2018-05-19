@@ -46,7 +46,7 @@
 
 输出为：
 
-![天安门（结果）](tiananmen(result).png)
+![天安门（结果）](tiananmen(output).png)
 
 
 
