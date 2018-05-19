@@ -46,7 +46,7 @@
 
 输出为：
 
-![天安门（结果）](天安门（结果）.png)
+![天安门（结果）](tiananmen(result).png)
 
 
 
@@ -54,18 +54,18 @@
 
 简化后的输出为：
 
-![人生经验（简化）](人生经验（结果简化）.png)
+![人生经验（简化）](jingyan(result_simplified).png)
 
 原始输出为：
 
-![人生经验（结果）](/Users/xiangdongwei/AA18_Project_Bootstrap/人生经验（结果）.png)
+![人生经验（结果）](jingyan(result).png)
 
 #### “他 在 记者会 上 表示 按照 香港 的 基本法 支持 特首 董先生 的 连任” 26字
 
 简化后的输出为：
 
-![基本法（结果简化）](/Users/xiangdongwei/AA18_Project_Bootstrap/基本法（结果简化）.png)
+![基本法（结果简化）](jibenfa(result_simplified).png)
 
 原始输出为（**高能预警**）：
 
-![基本法（结果）](/Users/xiangdongwei/AA18_Project_Bootstrap/基本法（结果）.png)
+![基本法（结果）](jiebenfa(result).png)
