@@ -1,0 +1,36 @@
+digraph {
+	graph [label=compound_verb labelloc=top]
+	node [shape=box]
+	verb_prev [label="<<preserve>>
+verb_prev:Module" color="#0033CC" fontcolor="#0033CC"]
+	verb_next [label="<<preserve>>
+verb_next:Module" color="#0033CC" fontcolor="#0033CC"]
+	outer_prev [label="<<preserve>>
+outer_prev:Module" color="#0033CC" fontcolor="#0033CC"]
+	outer_next [label="<<preserve>>
+outer_next:Module" color="#0033CC" fontcolor="#0033CC"]
+	verb [label="<<preserve>>
+verb:Verb" color="#0033CC" fontcolor="#0033CC"]
+	outer_prev -> verb_prev [label="<<delete>>
+next to" color="#FF0000" fontcolor="#FF0000"]
+	verb_prev -> verb_next [label="<<preserve>>
+next to" color="#0033CC" fontcolor="#0033CC"]
+	verb_next -> outer_next [label="<<delete>>
+next to" color="#FF0000" fontcolor="#FF0000"]
+	verb_prev -> verb [label="<<preserve>>
+is" color="#0033CC" fontcolor="#0033CC"]
+	verb_next -> verb [label="<<preserve>>
+is" color="#0033CC" fontcolor="#0033CC"]
+	compound_verb [label="<<create>>
+compound_verb:Module" color="#00CC33" fontcolor="#00CC33"]
+	outer_prev -> compound_verb [label="<<create>>
+next to" color="#00CC33" fontcolor="#00CC33"]
+	compound_verb -> outer_next [label="<<create>>
+next to" color="#00CC33" fontcolor="#00CC33"]
+	compound_verb -> verb [label="<<create>>
+is" color="#00CC33" fontcolor="#00CC33"]
+	verb_prev -> compound_verb [label="<<create>>
+subject to" color="#00CC33" fontcolor="#00CC33"]
+	verb_next -> compound_verb [label="<<create>>
+subject to" color="#00CC33" fontcolor="#00CC33"]
+}

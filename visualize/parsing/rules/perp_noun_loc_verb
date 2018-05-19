@@ -1,0 +1,48 @@
+digraph {
+	graph [label=perp_noun_loc_verb labelloc=top]
+	node [shape=box]
+	outer_prev [label="<<preserve>>
+outer_prev:Module" color="#0033CC" fontcolor="#0033CC"]
+	m_prep [label="<<preserve>>
+m_prep:Module" color="#0033CC" fontcolor="#0033CC"]
+	m_noun [label="<<preserve>>
+m_noun:Module" color="#0033CC" fontcolor="#0033CC"]
+	m_loc [label="<<preserve>>
+m_loc:Module" color="#0033CC" fontcolor="#0033CC"]
+	m_verb [label="<<preserve>>
+m_verb:Module" color="#0033CC" fontcolor="#0033CC"]
+	outer_next [label="<<preserve>>
+outer_next:Module" color="#0033CC" fontcolor="#0033CC"]
+	preposition [label="<<preserve>>
+preposition:Preposition" color="#0033CC" fontcolor="#0033CC"]
+	noun [label="<<preserve>>
+noun:Noun" color="#0033CC" fontcolor="#0033CC"]
+	location [label="<<preserve>>
+location:Location" color="#0033CC" fontcolor="#0033CC"]
+	verb [label="<<preserve>>
+verb:Verb" color="#0033CC" fontcolor="#0033CC"]
+	outer_prev -> m_prep [label="<<delete>>
+next to" color="#FF0000" fontcolor="#FF0000"]
+	m_prep -> m_noun [label="<<preserve>>
+next to" color="#0033CC" fontcolor="#0033CC"]
+	m_noun -> m_loc [label="<<preserve>>
+next to" color="#0033CC" fontcolor="#0033CC"]
+	m_loc -> m_verb [label="<<delete>>
+next to" color="#FF0000" fontcolor="#FF0000"]
+	m_verb -> outer_next [label="<<preserve>>
+next to" color="#0033CC" fontcolor="#0033CC"]
+	m_prep -> preposition [label="<<preserve>>
+is" color="#0033CC" fontcolor="#0033CC"]
+	m_noun -> noun [label="<<preserve>>
+is" color="#0033CC" fontcolor="#0033CC"]
+	m_loc -> location [label="<<preserve>>
+is" color="#0033CC" fontcolor="#0033CC"]
+	outer_prev -> m_verb [label="<<create>>
+next to" color="#00CC33" fontcolor="#00CC33"]
+	m_prep -> m_verb [label="<<create>>
+subject to" color="#00CC33" fontcolor="#00CC33"]
+	m_noun -> m_verb [label="<<create>>
+subject to" color="#00CC33" fontcolor="#00CC33"]
+	m_loc -> m_verb [label="<<create>>
+subject to" color="#00CC33" fontcolor="#00CC33"]
+}

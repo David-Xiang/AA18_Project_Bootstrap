@@ -1,0 +1,44 @@
+{
+	"graph":{
+		"objects": [{
+			"id": "farmer",
+			"type": "Farmer"
+		},{
+			"id": "wolf",
+			"type": "Wolf"
+		},{
+			"id": "vegetable",
+			"type": "Vegetable"
+		},{
+			"id": "goat",
+			"type": "Goat"
+		},{
+			"id": "side",
+			"type": "Side"
+		},{
+			"id": "goal",
+			"type": "Goal"
+		}],
+		"relations": [{
+			"type": "farmer_on_side",
+			"source": "farmer",
+			"target": "side"
+		},{
+			"type": "wolf_on_side", 
+			"source": "wolf",
+			"target": "side"
+		},{
+			"type": "goat_on_side", 
+			"source": "goat",
+			"target": "side"
+		},{
+			"type": "vegetable_on_side", 
+			"source": "vegetable",
+			"target": "side"
+		},{
+			"type": "side_is_goal",
+			"source": "side",
+			"target": "goal"
+		}]
+	}
+}

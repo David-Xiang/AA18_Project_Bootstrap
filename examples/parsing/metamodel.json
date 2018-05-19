@@ -1,0 +1,121 @@
+{
+	"classes":[{
+		"id": "Module"
+	},{
+		"id": "Noun"
+	},{
+		"id": "Verb"
+	},{
+		"id": "Adjective"
+	},{
+		"id": "Adverb"
+	},{
+		"id": "Conjunction"
+	},{
+		"id": "Preposition"
+	},{
+		"id": "Particle"
+	},{
+		"id": "Negative"
+	},{
+		"id": "Number"
+	},{
+		"id": "Quantifier"
+	},{
+		"id": "Time"
+	},{
+		"id": "Location"
+	},{
+		"id": "DE"
+	},{
+		"id": "Head"
+	},{
+		"id": "Tail"
+	}],
+	"relations":[{
+		"id": "next_to",
+		"name": "next to",
+		"source": "Module", 
+		"target": "Module"
+	},{
+		"id": "subject_to",
+		"name": "subject to",
+		"source": "Module", 
+		"target": "Module"
+	},{
+		"id": "is_noun",
+		"name": "is",
+		"source": "Module", 
+		"target": "Noun"
+	},{
+		"id": "is_verb",
+		"name": "is",
+		"source": "Module", 
+		"target": "Verb"
+	},{
+		"id": "is_adjective",
+		"name": "is",
+		"source": "Module", 
+		"target": "Adjective"
+	},{
+		"id": "is_adverb",
+		"name": "is",
+		"source": "Module", 
+		"target": "Adverb"
+	},{
+		"id": "is_preposition",
+		"name": "is",
+		"source": "Module", 
+		"target": "Preposition"
+	},{
+		"id": "is_conjunction",
+		"name": "is",
+		"source": "Module", 
+		"target": "Conjunction"
+	},{
+		"id": "is_particle",
+		"name": "is",
+		"source": "Module", 
+		"target": "Particle"
+	},{
+		"id": "is_negative",
+		"name": "is",
+		"source": "Module", 
+		"target": "Negative"
+	},{
+		"id": "is_time",
+		"name": "is",
+		"source": "Module", 
+		"target": "Time"
+	},{
+		"id": "is_location",
+		"name": "is",
+		"source": "Module", 
+		"target": "Location"
+	},{
+		"id": "is_number",
+		"name": "is",
+		"source": "Module", 
+		"target": "Number"
+	},{
+		"id": "is_quantifier",
+		"name": "is",
+		"source": "Module", 
+		"target": "Quantifier"
+	},{
+		"id": "is_de",
+		"name": "is",
+		"source": "Module", 
+		"target": "DE"
+	},{
+		"id": "is_head",
+		"name": "is",
+		"source": "Module", 
+		"target": "Head"
+	},{
+		"id": "is_tail",
+		"name": "is",
+		"source": "Module", 
+		"target": "Tail"
+	}]
+}

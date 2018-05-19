@@ -1,0 +1,36 @@
+digraph {
+	graph [label=compound_noun labelloc=top]
+	node [shape=box]
+	noun_prev [label="<<preserve>>
+noun_prev:Module" color="#0033CC" fontcolor="#0033CC"]
+	noun_next [label="<<preserve>>
+noun_next:Module" color="#0033CC" fontcolor="#0033CC"]
+	outer_prev [label="<<preserve>>
+outer_prev:Module" color="#0033CC" fontcolor="#0033CC"]
+	outer_next [label="<<preserve>>
+outer_next:Module" color="#0033CC" fontcolor="#0033CC"]
+	noun [label="<<preserve>>
+noun:Noun" color="#0033CC" fontcolor="#0033CC"]
+	outer_prev -> noun_prev [label="<<delete>>
+next to" color="#FF0000" fontcolor="#FF0000"]
+	noun_prev -> noun_next [label="<<preserve>>
+next to" color="#0033CC" fontcolor="#0033CC"]
+	noun_next -> outer_next [label="<<delete>>
+next to" color="#FF0000" fontcolor="#FF0000"]
+	noun_prev -> noun [label="<<preserve>>
+is" color="#0033CC" fontcolor="#0033CC"]
+	noun_next -> noun [label="<<preserve>>
+is" color="#0033CC" fontcolor="#0033CC"]
+	compound_noun [label="<<create>>
+compound_noun:Module" color="#00CC33" fontcolor="#00CC33"]
+	outer_prev -> compound_noun [label="<<create>>
+next to" color="#00CC33" fontcolor="#00CC33"]
+	compound_noun -> outer_next [label="<<create>>
+next to" color="#00CC33" fontcolor="#00CC33"]
+	compound_noun -> noun [label="<<create>>
+is" color="#00CC33" fontcolor="#00CC33"]
+	noun_prev -> compound_noun [label="<<create>>
+subject to" color="#00CC33" fontcolor="#00CC33"]
+	noun_next -> compound_noun [label="<<create>>
+subject to" color="#00CC33" fontcolor="#00CC33"]
+}

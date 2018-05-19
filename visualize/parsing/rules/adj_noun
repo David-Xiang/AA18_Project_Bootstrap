@@ -1,0 +1,30 @@
+digraph {
+	graph [label=adj_noun labelloc=top]
+	node [shape=box]
+	m_adj [label="<<preserve>>
+m_adj:Module" color="#0033CC" fontcolor="#0033CC"]
+	m_noun [label="<<preserve>>
+m_noun:Module" color="#0033CC" fontcolor="#0033CC"]
+	outer_prev [label="<<preserve>>
+outer_prev:Module" color="#0033CC" fontcolor="#0033CC"]
+	outer_next [label="<<preserve>>
+outer_next:Module" color="#0033CC" fontcolor="#0033CC"]
+	noun [label="<<preserve>>
+noun:Noun" color="#0033CC" fontcolor="#0033CC"]
+	adjective [label="<<preserve>>
+adjective:Adjective" color="#0033CC" fontcolor="#0033CC"]
+	outer_prev -> m_adj [label="<<delete>>
+next to" color="#FF0000" fontcolor="#FF0000"]
+	m_adj -> m_noun [label="<<delete>>
+next to" color="#FF0000" fontcolor="#FF0000"]
+	m_noun -> outer_next [label="<<preserve>>
+next to" color="#0033CC" fontcolor="#0033CC"]
+	m_noun -> noun [label="<<preserve>>
+is" color="#0033CC" fontcolor="#0033CC"]
+	m_adj -> adjective [label="<<preserve>>
+is" color="#0033CC" fontcolor="#0033CC"]
+	outer_prev -> m_noun [label="<<create>>
+next to" color="#00CC33" fontcolor="#00CC33"]
+	m_adj -> m_noun [label="<<create>>
+subject to" color="#00CC33" fontcolor="#00CC33"]
+}

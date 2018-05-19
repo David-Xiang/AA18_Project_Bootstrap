@@ -1,0 +1,38 @@
+digraph {
+	graph [label=nega_verb labelloc=top]
+	node [shape=box]
+	m_nega [label="<<preserve>>
+m_nega:Module" color="#0033CC" fontcolor="#0033CC"]
+	m_verb [label="<<preserve>>
+m_verb:Module" color="#0033CC" fontcolor="#0033CC"]
+	outer_prev [label="<<preserve>>
+outer_prev:Module" color="#0033CC" fontcolor="#0033CC"]
+	outer_next [label="<<preserve>>
+outer_next:Module" color="#0033CC" fontcolor="#0033CC"]
+	verb [label="<<preserve>>
+verb:Verb" color="#0033CC" fontcolor="#0033CC"]
+	negative [label="<<preserve>>
+negative:Negative" color="#0033CC" fontcolor="#0033CC"]
+	outer_prev -> m_nega [label="<<delete>>
+next to" color="#FF0000" fontcolor="#FF0000"]
+	m_nega -> m_verb [label="<<delete>>
+next to" color="#FF0000" fontcolor="#FF0000"]
+	m_verb -> outer_next [label="<<delete>>
+next to" color="#FF0000" fontcolor="#FF0000"]
+	m_verb -> verb [label="<<preserve>>
+is" color="#0033CC" fontcolor="#0033CC"]
+	m_nega -> negative [label="<<preserve>>
+is" color="#0033CC" fontcolor="#0033CC"]
+	new_verb [label="<<create>>
+new_verb:Module" color="#00CC33" fontcolor="#00CC33"]
+	outer_prev -> new_verb [label="<<create>>
+next to" color="#00CC33" fontcolor="#00CC33"]
+	m_nega -> new_verb [label="<<create>>
+subject to" color="#00CC33" fontcolor="#00CC33"]
+	m_verb -> new_verb [label="<<create>>
+subject to" color="#00CC33" fontcolor="#00CC33"]
+	new_verb -> outer_next [label="<<create>>
+next to" color="#00CC33" fontcolor="#00CC33"]
+	new_verb -> verb [label="<<create>>
+is" color="#00CC33" fontcolor="#00CC33"]
+}

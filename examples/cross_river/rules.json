@@ -1,0 +1,302 @@
+[{
+	"id": "farmer_carry_wolf",
+	"lhs": {
+		"objects": [{
+			"id": "farmer",
+			"type": "Farmer"
+		},{
+			"id": "wolf",
+			"type": "Wolf"
+		},{
+			"id": "side1",
+			"type": "Side"
+		},{
+			"id": "side2",
+			"type": "Side"
+		}],
+		"relations": [{
+			"type": "farmer_on_side",
+			"source": "farmer",
+			"target": "side1"
+		},{
+			"type": "wolf_on_side", 
+			"source": "wolf",
+			"target": "side1"
+		},{
+			"type": "next_to",
+			"source": "side1", 
+			"target": "side2"
+		}]
+	},
+	"rhs": {
+		"objects":[{
+			"id": "farmer",
+			"type": "Farmer"
+		},{
+			"id": "wolf",
+			"type": "Wolf"
+		},{
+			"id": "side1",
+			"type": "Side"
+		},{
+			"id": "side2",
+			"type": "Side"
+		}],
+		"relations": [{
+			"type": "farmer_on_side",
+			"source": "farmer",
+			"target": "side2"
+		},{
+			"type": "wolf_on_side", 
+			"source": "wolf",
+			"target": "side2"
+		},{
+			"type": "next_to",
+			"source": "side1", 
+			"target": "side2"
+		}]
+	},
+	"nacs":[{
+		"objects": [{
+			"id": "goat", 
+			"type": "Goat"
+		},{
+			"id": "vegetable",
+			"type": "Vegetable"
+		},{
+			"id": "side1",
+			"type": "Side"
+		}],
+		"relations": [{
+			"type": "vegetable_on_side",
+			"source": "vegetable",
+			"target": "side1"
+		},{
+			"type": "goat_on_side",
+			"source": "goat",
+			"target": "side1"
+		}]
+	}]
+},{
+	"id": "farmer_carry_vegetable",
+	"lhs": {
+		"objects": [{
+			"id": "farmer",
+			"type": "Farmer"
+		},{
+			"id": "vegetable",
+			"type": "Vegetable"
+		},{
+			"id": "side1",
+			"type": "Side"
+		},{
+			"id": "side2",
+			"type": "Side"
+		}],
+		"relations": [{
+			"type": "farmer_on_side",
+			"source": "farmer",
+			"target": "side1"
+		},{
+			"type": "vegetable_on_side", 
+			"source": "vegetable",
+			"target": "side1"
+		},{
+			"type": "next_to",
+			"source": "side1", 
+			"target": "side2"
+		}]
+	},
+	"rhs": {
+		"objects":[{
+			"id": "farmer",
+			"type": "Farmer"
+		},{
+			"id": "vegetable",
+			"type": "Vegetable"
+		},{
+			"id": "side1",
+			"type": "Side"
+		},{
+			"id": "side2",
+			"type": "Side"
+		}],
+		"relations": [{
+			"type": "farmer_on_side",
+			"source": "farmer",
+			"target": "side2"
+		},{
+			"type": "vegetable_on_side", 
+			"source": "vegetable",
+			"target": "side2"
+		},{
+			"type": "next_to",
+			"source": "side1", 
+			"target": "side2"
+		}]
+	},
+	"nacs":[{
+		"objects": [{
+			"id": "goat", 
+			"type": "Goat"
+		},{
+			"id": "wolf",
+			"type": "Wolf"
+		},{
+			"id": "side1",
+			"type": "Side"
+		}],
+		"relations": [{
+			"type": "wolf_on_side",
+			"source": "wolf",
+			"target": "side1"
+		},{
+			"type": "goat_on_side",
+			"source": "goat",
+			"target": "side1"
+		}]
+	}]
+},{
+	"id": "farmer_carry_goat",
+	"lhs": {
+		"objects": [{
+			"id": "farmer",
+			"type": "Farmer"
+		},{
+			"id": "goat",
+			"type": "Goat"
+		},{
+			"id": "side1",
+			"type": "Side"
+		},{
+			"id": "side2",
+			"type": "Side"
+		}],
+		"relations": [{
+			"type": "farmer_on_side",
+			"source": "farmer",
+			"target": "side1"
+		},{
+			"type": "goat_on_side", 
+			"source": "goat",
+			"target": "side1"
+		},{
+			"type": "next_to",
+			"source": "side1", 
+			"target": "side2"
+		}]
+	},
+	"rhs": {
+		"objects":[{
+			"id": "farmer",
+			"type": "Farmer"
+		},{
+			"id": "goat",
+			"type": "Goat"
+		},{
+			"id": "side1",
+			"type": "Side"
+		},{
+			"id": "side2",
+			"type": "Side"
+		}],
+		"relations": [{
+			"type": "farmer_on_side",
+			"source": "farmer",
+			"target": "side2"
+		},{
+			"type": "goat_on_side", 
+			"source": "goat",
+			"target": "side2"
+		},{
+			"type": "next_to",
+			"source": "side1", 
+			"target": "side2"
+		}]
+	}
+},{
+	"id": "farmer_alone",
+	"lhs": {
+		"objects": [{
+			"id": "farmer",
+			"type": "Farmer"
+		},{
+			"id": "side1",
+			"type": "Side"
+		},{
+			"id": "side2",
+			"type": "Side"
+		}],
+		"relations": [{
+			"type": "farmer_on_side",
+			"source": "farmer",
+			"target": "side1"
+		},{
+			"type": "next_to",
+			"source": "side1", 
+			"target": "side2"
+		}]
+	},
+	"rhs": {
+		"objects":[{
+			"id": "farmer",
+			"type": "Farmer"
+		},{
+			"id": "side1",
+			"type": "Side"
+		},{
+			"id": "side2",
+			"type": "Side"
+		}],
+		"relations": [{
+			"type": "farmer_on_side",
+			"source": "farmer",
+			"target": "side2"
+		},{
+			"type": "next_to",
+			"source": "side1", 
+			"target": "side2"
+		}]
+	},
+	"nacs": [{
+		"objects": [{
+			"id": "goat", 
+			"type": "Goat"
+		},{
+			"id": "vegetable",
+			"type": "Vegetable"
+		},{
+			"id": "side1",
+			"type": "Side"
+		}],
+		"relations": [{
+			"type": "vegetable_on_side",
+			"source": "vegetable",
+			"target": "side1"
+		},{
+			"type": "goat_on_side",
+			"source": "goat",
+			"target": "side1"
+		}]
+	},{
+		"objects": [{
+			"id": "goat", 
+			"type": "Goat"
+		},{
+			"id": "wolf",
+			"type": "Wolf"
+		},{
+			"id": "side1",
+			"type": "Side"
+		}],
+		"relations": [{
+			"type": "wolf_on_side",
+			"source": "wolf",
+			"target": "side1"
+		},{
+			"type": "goat_on_side",
+			"source": "goat",
+			"target": "side1"
+		}]
+	}]
+}]

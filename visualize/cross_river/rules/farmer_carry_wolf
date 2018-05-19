@@ -1,0 +1,33 @@
+digraph {
+	graph [label=farmer_carry_wolf labelloc=top]
+	node [shape=box]
+	farmer [label="<<preserve>>
+farmer:Farmer" color="#0033CC" fontcolor="#0033CC"]
+	wolf [label="<<preserve>>
+wolf:Wolf" color="#0033CC" fontcolor="#0033CC"]
+	side1 [label="<<preserve>>
+side1:Side" color="#0033CC" fontcolor="#0033CC"]
+	side2 [label="<<preserve>>
+side2:Side" color="#0033CC" fontcolor="#0033CC"]
+	farmer -> side1 [label="<<delete>>
+on" color="#FF0000" fontcolor="#FF0000"]
+	wolf -> side1 [label="<<delete>>
+on" color="#FF0000" fontcolor="#FF0000"]
+	side1 -> side2 [label="<<preserve>>
+next to" color="#0033CC" fontcolor="#0033CC"]
+	subgraph cluster_nac_0 {
+		graph [label="nac 0" style=dotted]
+		nac_0_goat [label="<<nac>>
+goat:Goat" color="#666666" fontcolor="#666666"]
+		nac_0_vegetable [label="<<nac>>
+vegetable:Vegetable" color="#666666" fontcolor="#666666"]
+		nac_0_vegetable -> side1 [label="<<nac>>
+on" color="#666666" fontcolor="#666666"]
+		nac_0_goat -> side1 [label="<<nac>>
+on" color="#666666" fontcolor="#666666"]
+	}
+	farmer -> side2 [label="<<create>>
+on" color="#00CC33" fontcolor="#00CC33"]
+	wolf -> side2 [label="<<create>>
+on" color="#00CC33" fontcolor="#00CC33"]
+}

@@ -1,0 +1,48 @@
+digraph {
+	graph [label=num_quan_noun labelloc=top]
+	node [shape=box]
+	outer_prev [label="<<preserve>>
+outer_prev:Module" color="#0033CC" fontcolor="#0033CC"]
+	m_num [label="<<preserve>>
+m_num:Module" color="#0033CC" fontcolor="#0033CC"]
+	m_quan [label="<<preserve>>
+m_quan:Module" color="#0033CC" fontcolor="#0033CC"]
+	m_noun [label="<<preserve>>
+m_noun:Module" color="#0033CC" fontcolor="#0033CC"]
+	outer_next [label="<<preserve>>
+outer_next:Module" color="#0033CC" fontcolor="#0033CC"]
+	number [label="<<preserve>>
+number:Number" color="#0033CC" fontcolor="#0033CC"]
+	quantifier [label="<<preserve>>
+quantifier:Quantifier" color="#0033CC" fontcolor="#0033CC"]
+	noun [label="<<preserve>>
+noun:Noun" color="#0033CC" fontcolor="#0033CC"]
+	outer_prev -> m_num [label="<<delete>>
+next to" color="#FF0000" fontcolor="#FF0000"]
+	m_num -> m_quan [label="<<delete>>
+next to" color="#FF0000" fontcolor="#FF0000"]
+	m_quan -> m_noun [label="<<delete>>
+next to" color="#FF0000" fontcolor="#FF0000"]
+	m_noun -> outer_next [label="<<delete>>
+next to" color="#FF0000" fontcolor="#FF0000"]
+	m_num -> number [label="<<preserve>>
+is" color="#0033CC" fontcolor="#0033CC"]
+	m_quan -> quantifier [label="<<preserve>>
+is" color="#0033CC" fontcolor="#0033CC"]
+	m_noun -> noun [label="<<preserve>>
+is" color="#0033CC" fontcolor="#0033CC"]
+	compound_noun [label="<<create>>
+compound_noun:Module" color="#00CC33" fontcolor="#00CC33"]
+	outer_prev -> compound_noun [label="<<create>>
+next to" color="#00CC33" fontcolor="#00CC33"]
+	compound_noun -> outer_next [label="<<create>>
+next to" color="#00CC33" fontcolor="#00CC33"]
+	m_num -> compound_noun [label="<<create>>
+subject to" color="#00CC33" fontcolor="#00CC33"]
+	m_quan -> compound_noun [label="<<create>>
+subject to" color="#00CC33" fontcolor="#00CC33"]
+	m_noun -> compound_noun [label="<<create>>
+subject to" color="#00CC33" fontcolor="#00CC33"]
+	compound_noun -> noun [label="<<create>>
+is" color="#00CC33" fontcolor="#00CC33"]
+}

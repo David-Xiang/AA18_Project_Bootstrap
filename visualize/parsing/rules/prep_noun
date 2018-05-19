@@ -1,0 +1,44 @@
+digraph {
+	graph [label=prep_noun labelloc=top]
+	node [shape=box]
+	m_prep [label="<<preserve>>
+m_prep:Module" color="#0033CC" fontcolor="#0033CC"]
+	m_noun [label="<<preserve>>
+m_noun:Module" color="#0033CC" fontcolor="#0033CC"]
+	outer_prev [label="<<preserve>>
+outer_prev:Module" color="#0033CC" fontcolor="#0033CC"]
+	outer_next [label="<<preserve>>
+outer_next:Module" color="#0033CC" fontcolor="#0033CC"]
+	prep [label="<<preserve>>
+prep:Preposition" color="#0033CC" fontcolor="#0033CC"]
+	noun [label="<<preserve>>
+noun:Noun" color="#0033CC" fontcolor="#0033CC"]
+	outer_prev -> m_prep [label="<<delete>>
+next to" color="#FF0000" fontcolor="#FF0000"]
+	m_prep -> m_noun [label="<<delete>>
+next to" color="#FF0000" fontcolor="#FF0000"]
+	m_noun -> outer_next [label="<<delete>>
+next to" color="#FF0000" fontcolor="#FF0000"]
+	m_prep -> prep [label="<<preserve>>
+is" color="#0033CC" fontcolor="#0033CC"]
+	m_noun -> noun [label="<<preserve>>
+is" color="#0033CC" fontcolor="#0033CC"]
+	new_prep [label="<<create>>
+new_prep:Module" color="#00CC33" fontcolor="#00CC33"]
+	new_adverbial [label="<<create>>
+new_adverbial:Module" color="#00CC33" fontcolor="#00CC33"]
+	adverb [label="<<create>>
+adverb:Adverb" color="#00CC33" fontcolor="#00CC33"]
+	outer_prev -> new_adverbial [label="<<create>>
+next to" color="#00CC33" fontcolor="#00CC33"]
+	m_prep -> new_adverbial [label="<<create>>
+subject to" color="#00CC33" fontcolor="#00CC33"]
+	m_noun -> new_adverbial [label="<<create>>
+subject to" color="#00CC33" fontcolor="#00CC33"]
+	new_adverbial -> outer_next [label="<<create>>
+next to" color="#00CC33" fontcolor="#00CC33"]
+	new_prep -> prep [label="<<create>>
+is" color="#00CC33" fontcolor="#00CC33"]
+	new_adverbial -> adverb [label="<<create>>
+is" color="#00CC33" fontcolor="#00CC33"]
+}

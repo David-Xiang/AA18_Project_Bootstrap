@@ -1,0 +1,13 @@
+digraph {
+	Tile [label=Tile shape=box]
+	Box [label=Box shape=box]
+	Agent [label=Agent shape=box]
+	Trivial [label=Trivial shape=box]
+	Goal [label=Goal shape=box]
+	Box -> Tile [label=on]
+	Agent -> Tile [label=on]
+	Tile -> Trivial [label=is]
+	Tile -> Goal [label=is]
+	Tile -> Tile [label=left_of]
+	Tile -> Tile [label=top_of]
+}

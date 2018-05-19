@@ -1,0 +1,23 @@
+digraph {
+	graph [label=agent_move_right labelloc=top]
+	node [shape=box]
+	agent [label="<<preserve>>
+agent:Agent" color="#0033CC" fontcolor="#0033CC"]
+	tile_right [label="<<preserve>>
+right tile:Tile" color="#0033CC" fontcolor="#0033CC"]
+	tile_left [label="<<preserve>>
+left tile:Tile" color="#0033CC" fontcolor="#0033CC"]
+	agent -> tile_left [label="<<delete>>
+on" color="#FF0000" fontcolor="#FF0000"]
+	tile_left -> tile_right [label="<<preserve>>
+left_of" color="#0033CC" fontcolor="#0033CC"]
+	subgraph cluster_nac_0 {
+		graph [label="nac 0" style=dotted]
+		nac_0_box [label="<<nac>>
+box:Box" color="#666666" fontcolor="#666666"]
+		nac_0_box -> tile_right [label="<<nac>>
+on" color="#666666" fontcolor="#666666"]
+	}
+	agent -> tile_right [label="<<create>>
+on" color="#00CC33" fontcolor="#00CC33"]
+}

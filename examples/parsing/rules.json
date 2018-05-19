@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "compound_noun",
+    "lhs": {
+      "objects": [{
+          "id": "noun_prev",
+          "type": "Module"
+        },{
+          "id": "noun_next",
+          "type": "Module"
+        },{
+          "id": "outer_prev",
+          "type": "Module"
+        },{
+          "id": "outer_next",
+          "type": "Module"
+        },{
+          "id": "noun",
+          "type": "Noun"
+        }],
+      "relations": [{
+          "type": "next_to",
+          "source": "outer_prev",
+          "target": "noun_prev"
+        },{
+          "type": "next_to",
+          "source": "noun_prev",
+          "target": "noun_next"
+        },{
+          "type": "next_to",
+          "source": "noun_next",
+          "target": "outer_next"
+        },{
+          "type": "is_noun",
+          "source": "noun_prev",
+          "target": "noun"
+        },{
+          "type": "is_noun",
+          "source": "noun_next",
+          "target": "noun"
+        }]
+    },
+    "rhs": {
+      "objects": [{
+          "id": "noun_prev",
+          "type": "Module"
+        },{
+          "id": "noun_next",
+          "type": "Module"
+        },{
+          "id": "outer_prev",
+          "type": "Module"
+        },{
+          "id": "outer_next",
+          "type": "Module"
+        },{
+          "id": "noun",
+          "type": "Noun"
+        },{
+          "id": "compound_noun",
+          "type": "Module"
+        }],
+      "relations": [{
+          "type": "next_to",
+          "source": "outer_prev",
+          "target": "compound_noun"
+        },{
+          "type": "next_to",
+          "source": "noun_prev",
+          "target": "noun_next"
+        },{
+          "type": "next_to",
+          "source": "compound_noun",
+          "target": "outer_next"
+        },{
+          "type": "is_noun",
+          "source": "noun_prev",
+          "target": "noun"
+        },{
+          "type": "is_noun",
+          "source": "noun_next",
+          "target": "noun"
+        },{
+          "type": "is_noun",
+          "source": "compound_noun",
+          "target": "noun"
+        },{
+          "type": "subject_to",
+          "source": "noun_prev",
+          "target": "compound_noun"
+        },{
+          "type": "subject_to",
+          "source": "noun_next",
+          "target": "compound_noun"
+        }]
+    },
+    "nacs": []
+  },
+  {
+    "id": "compound_verb",
+    "lhs": {
+      "objects": [{
+          "id": "verb_prev",
+          "type": "Module"
+        },{
+          "id": "verb_next",
+          "type": "Module"
+        },{
+          "id": "outer_prev",
+          "type": "Module"
+        },{
+          "id": "outer_next",
+          "type": "Module"
+        },{
+          "id": "verb",
+          "type": "Verb"
+        }],
+      "relations": [{
+          "type": "next_to",
+          "source": "outer_prev",
+          "target": "verb_prev"
+        },{
+          "type": "next_to",
+          "source": "verb_prev",
+          "target": "verb_next"
+        },{
+          "type": "next_to",
+          "source": "verb_next",
+          "target": "outer_next"
+        },{
+          "type": "is_verb",
+          "source": "verb_prev",
+          "target": "verb"
+        },{
+          "type": "is_verb",
+          "source": "verb_next",
+          "target": "verb"
+        }]
+    },
+    "rhs": {
+      "objects": [{
+          "id": "verb_prev",
+          "type": "Module"
+        },{
+          "id": "verb_next",
+          "type": "Module"
+        },{
+          "id": "outer_prev",
+          "type": "Module"
+        },{
+          "id": "outer_next",
+          "type": "Module"
+        },{
+          "id": "verb",
+          "type": "Verb"
+        },{
+          "id": "compound_verb",
+          "type": "Module"
+        }],
+      "relations": [{
+          "type": "next_to",
+          "source": "outer_prev",
+          "target": "compound_verb"
+        },{
+          "type": "next_to",
+          "source": "verb_prev",
+          "target": "verb_next"
+        },{
+          "type": "next_to",
+          "source": "compound_verb",
+          "target": "outer_next"
+        },{
+          "type": "is_verb",
+          "source": "verb_prev",
+          "target": "verb"
+        },{
+          "type": "is_verb",
+          "source": "verb_next",
+          "target": "verb"
+        },{
+          "type": "is_verb",
+          "source": "compound_verb",
+          "target": "verb"
+        },{
+          "type": "subject_to",
+          "source": "verb_prev",
+          "target": "compound_verb"
+        },{
+          "type": "subject_to",
+          "source": "verb_next",
+          "target": "compound_verb"
+        }]
+    },
+    "nacs": []
+  },
+  {
+    "id": "de_trans",
+    "lhs": {
+      "objects": [{
+          "id": "prev",
+          "type": "Module"
+        },{
+          "id": "next",
+          "type": "Module"
+        },{
+          "id": "outer_prev",
+          "type": "Module"
+        },{
+          "id": "outer_next",
+          "type": "Module"
+        },{
+          "id": "m_de",
+          "type": "Module"
+        },{
+          "id": "de",
+          "type": "DE"
+        }],
+      "relations": [{
+          "type": "next_to",
+          "source": "outer_prev",
+          "target": "prev"
+        },{
+          "type": "next_to",
+          "source": "prev",
+          "target": "m_de"
+        },{
+          "type": "next_to",
+          "source": "m_de",
+          "target": "next"
+        },{
+          "type": "next_to",
+          "source": "next",
+          "target": "outer_next"
+        },{
+          "type": "is_de",
+          "source": "m_de",
+          "target": "de"
+        }]
+    },
+    "rhs": {
+      "objects": [{
+          "id": "prev",
+          "type": "Module"
+        },{
+          "id": "next",
+          "type": "Module"
+        },{
+          "id": "outer_prev",
+          "type": "Module"
+        },{
+          "id": "outer_next",
+          "type": "Module"
+        },{
+          "id": "m_de",
+          "type": "Module"
+        },{
+          "id": "de",
+          "type": "DE"
+        }],
+      "relations": [{
+          "type": "next_to",
+          "source": "outer_prev",
+          "target": "next"
+        },{
+          "type": "subject_to",
+          "source": "prev",
+          "target": "m_de"
+        },{
+          "type": "subject_to",
+          "source": "m_de",
+          "target": "next"
+        },{
+          "type": "next_to",
+          "source": "next",
+          "target": "outer_next"
+        },{
+          "type": "is_de",
+          "source": "m_de",
+          "target": "de"
+        }]
+    },
+    "nacs": [{
+      "objects": [{
+      "id": "prev", 
+      "type": "Module"
+    },{
+      "id": "outer_prev",
+      "type": "Module"
+    },{
+      "id": "noun",
+      "type": "Noun"
+    }],
+    "relations": [{
+      "type": "is_noun",
+      "source": "prev",
+      "target": "noun"
+    },{
+      "type": "is_noun",
+      "source": "outer_prev",
+      "target": "noun"
+    }]
+    }]
+  },
+  {
+    "id": "num_quan_noun",
+    "lhs": {
+      "objects": [{
+          "id": "outer_prev",
+          "type": "Module"
+        },{
+          "id": "m_num",
+          "type": "Module"
+        },{
+          "id": "m_quan",
+          "type": "Module"
+        },{
+          "id": "m_noun",
+          "type": "Module"
+        },{
+          "id": "outer_next",
+          "type": "Module"
+        },{
+          "id": "number",
+          "type": "Number"
+        },{
+          "id": "quantifier",
+          "type": "Quantifier"
+        },{
+          "id": "noun",
+          "type": "Noun"
+        }],
+      "relations": [{
+          "type": "next_to",
+          "source": "outer_prev",
+          "target": "m_num"
+        },{
+          "type": "next_to",
+          "source": "m_num",
+          "target": "m_quan"
+        },{
+          "type": "next_to",
+          "source": "m_quan",
+          "target": "m_noun"
+        },{
+          "type": "next_to",
+          "source": "m_noun",
+          "target": "outer_next"
+        },{
+          "type": "is_number",
+          "source": "m_num",
+          "target": "number"
+        },{
+          "type": "is_quantifier",
+          "source": "m_quan",
+          "target": "quantifier"
+        },{
+          "type": "is_noun",
+          "source": "m_noun",
+          "target": "noun"
+        }]
+    },
+    "rhs": {
+      "objects": [{
+          "id": "outer_prev",
+          "type": "Module"
+        },{
+          "id": "m_num",
+          "type": "Module"
+        },{
+          "id": "m_quan",
+          "type": "Module"
+        },{
+          "id": "m_noun",
+          "type": "Module"
+        },{
+          "id": "outer_next",
+          "type": "Module"
+        },{
+          "id": "compound_noun",
+          "type": "Module"
+        },{
+          "id": "number",
+          "type": "Number"
+        },{
+          "id": "quantifier",
+          "type": "Quantifier"
+        },{
+          "id": "noun",
+          "type": "Noun"
+        }],
+      "relations": [{
+          "type": "next_to",
+          "source": "outer_prev",
+          "target": "compound_noun"
+        },{
+          "type": "next_to",
+          "source": "compound_noun",
+          "target": "outer_next"
+        },{
+          "type": "subject_to",
+          "source": "m_num",
+          "target": "compound_noun"
+        },{
+          "type": "subject_to",
+          "source": "m_quan",
+          "target": "compound_noun"
+        },{
+          "type": "subject_to",
+          "source": "m_noun",
+          "target": "compound_noun"
+        },{
+          "type": "is_number",
+          "source": "m_num",
+          "target": "number"
+        },{
+          "type": "is_quantifier",
+          "source": "m_quan",
+          "target": "quantifier"
+        },{
+          "type": "is_noun",
+          "source": "m_noun",
+          "target": "noun"
+        },{
+          "type": "is_noun",
+          "source": "compound_noun",
+          "target": "noun"
+        }]
+    },
+    "nacs": []
+  },
+  {
+    "id": "adj_noun",
+    "lhs": {
+      "objects": [{
+          "id": "m_adj",
+          "type": "Module"
+        },{
+          "id": "m_noun",
+          "type": "Module"
+        },{
+          "id": "outer_prev",
+          "type": "Module"
+        },{
+          "id": "outer_next",
+          "type": "Module"
+        },{
+          "id": "noun",
+          "type": "Noun"
+        },{
+          "id": "adjective",
+          "type": "Adjective"
+        }],
+      "relations": [{
+          "type": "next_to",
+          "source": "outer_prev",
+          "target": "m_adj"
+        },{
+          "type": "next_to",
+          "source": "m_adj",
+          "target": "m_noun"
+        },{
+          "type": "next_to",
+          "source": "m_noun",
+          "target": "outer_next"
+        },{
+          "type": "is_noun",
+          "source": "m_noun",
+          "target": "noun"
+        },{
+          "type": "is_adjective",
+          "source": "m_adj",
+          "target": "adjective"
+        }]
+    },
+    "rhs": {
+      "objects": [{
+          "id": "m_adj",
+          "type": "Module"
+        },{
+          "id": "m_noun",
+          "type": "Module"
+        },{
+          "id": "outer_prev",
+          "type": "Module"
+        },{
+          "id": "outer_next",
+          "type": "Module"
+        },{
+          "id": "noun",
+          "type": "Noun"
+        },{
+          "id": "adjective",
+          "type": "Adjective"
+        }],
+      "relations": [{
+          "type": "next_to",
+          "source": "outer_prev",
+          "target": "m_noun"
+        },{
+          "type": "subject_to",
+          "source": "m_adj",
+          "target": "m_noun"
+        },{
+          "type": "next_to",
+          "source": "m_noun",
+          "target": "outer_next"
+        },{
+          "type": "is_noun",
+          "source": "m_noun",
+          "target": "noun"
+        },{
+          "type": "is_adjective",
+          "source": "m_adj",
+          "target": "adjective"
+        }]
+    },
+    "nacs": []
+  },
+  {
+    "id": "nega_verb",
+    "lhs": {
+      "objects": [{
+          "id": "m_nega",
+          "type": "Module"
+        },{
+          "id": "m_verb",
+          "type": "Module"
+        },{
+          "id": "outer_prev",
+          "type": "Module"
+        },{
+          "id": "outer_next",
+          "type": "Module"
+        },{
+          "id": "verb",
+          "type": "Verb"
+        },{
+          "id": "negative",
+          "type": "Negative"
+        }],
+      "relations": [{
+          "type": "next_to",
+          "source": "outer_prev",
+          "target": "m_nega"
+        },{
+          "type": "next_to",
+          "source": "m_nega",
+          "target": "m_verb"
+        },{
+          "type": "next_to",
+          "source": "m_verb",
+          "target": "outer_next"
+        },{
+          "type": "is_verb",
+          "source": "m_verb",
+          "target": "verb"
+        },{
+          "type": "is_negative",
+          "source": "m_nega",
+          "target": "negative"
+        }]
+    },
+    "rhs": {
+      "objects": [{
+          "id": "m_nega",
+          "type": "Module"
+        },{
+          "id": "m_verb",
+          "type": "Module"
+        },{
+          "id": "outer_prev",
+          "type": "Module"
+        },{
+          "id": "outer_next",
+          "type": "Module"
+        },{
+          "id": "new_verb",
+          "type": "Module"
+        },{
+          "id": "verb",
+          "type": "Verb"
+        },{
+          "id": "negative",
+          "type": "Negative"
+        }],
+      "relations": [{
+          "type": "next_to",
+          "source": "outer_prev",
+          "target": "new_verb"
+        },{
+          "type": "subject_to",
+          "source": "m_nega",
+          "target": "new_verb"
+        },{
+          "type": "subject_to",
+          "source": "m_verb",
+          "target": "new_verb"
+        },{
+          "type": "next_to",
+          "source": "new_verb",
+          "target": "outer_next"
+        },{
+          "type": "is_verb",
+          "source": "m_verb",
+          "target": "verb"
+        },{
+          "type": "is_negative",
+          "source": "m_nega",
+          "target": "negative"
+        },{
+          "type": "is_verb",
+          "source": "new_verb",
+          "target": "verb"
+        }]
+    },
+    "nacs": []
+  },
+  {
+    "id": "perp_noun_loc_verb",
+    "lhs": {
+      "objects": [{
+          "id": "outer_prev",
+          "type": "Module"
+        },{
+          "id": "m_prep",
+          "type": "Module"
+        },{
+          "id": "m_noun",
+          "type": "Module"
+        },{
+          "id": "m_loc",
+          "type": "Module"
+        },{
+          "id": "m_verb",
+          "type": "Module"
+        },{
+          "id": "outer_next",
+          "type": "Module"
+        },{
+          "id": "preposition",
+          "type": "Preposition"
+        },{
+          "id": "noun",
+          "type": "Noun"
+        },{
+          "id": "location",
+          "type": "Location"
+        },{
+          "id": "verb",
+          "type": "Verb"
+        }],
+      "relations": [{
+          "type": "next_to",
+          "source": "outer_prev",
+          "target": "m_prep"
+        },{
+          "type": "next_to",
+          "source": "m_prep",
+          "target": "m_noun"
+        },{
+          "type": "next_to",
+          "source": "m_noun",
+          "target": "m_loc"
+        },{
+          "type": "next_to",
+          "source": "m_loc",
+          "target": "m_verb"
+        },{
+          "type": "next_to",
+          "source": "m_verb",
+          "target": "outer_next"
+        },{
+          "type": "is_preposition",
+          "source": "m_prep",
+          "target": "preposition"
+        },{
+          "type": "is_noun",
+          "source": "m_noun",
+          "target": "noun"
+        },{
+          "type": "is_location",
+          "source": "m_loc",
+          "target": "location"
+        }]
+    },
+    "rhs": {
+      "objects": [{
+          "id": "outer_prev",
+          "type": "Module"
+        },{
+          "id": "m_prep",
+          "type": "Module"
+        },{
+          "id": "m_noun",
+          "type": "Module"
+        },{
+          "id": "m_loc",
+          "type": "Module"
+        },{
+          "id": "m_verb",
+          "type": "Module"
+        },{
+          "id": "outer_next",
+          "type": "Module"
+        },{
+          "id": "preposition",
+          "type": "Preposition"
+        },{
+          "id": "noun",
+          "type": "Noun"
+        },{
+          "id": "location",
+          "type": "Location"
+        },{
+          "id": "verb",
+          "type": "Verb"
+        }],
+      "relations": [{
+          "type": "next_to",
+          "source": "outer_prev",
+          "target": "m_verb"
+        },{
+          "type": "next_to",
+          "source": "m_prep",
+          "target": "m_noun"
+        },{
+          "type": "next_to",
+          "source": "m_noun",
+          "target": "m_loc"
+        },{
+          "type": "next_to",
+          "source": "m_verb",
+          "target": "outer_next"
+        },{
+          "type": "is_preposition",
+          "source": "m_prep",
+          "target": "preposition"
+        },{
+          "type": "is_noun",
+          "source": "m_noun",
+          "target": "noun"
+        },{
+          "type": "is_location",
+          "source": "m_loc",
+          "target": "location"
+        },{
+          "type": "subject_to",
+          "source": "m_prep",
+          "target": "m_verb"
+        },{
+          "type": "subject_to",
+          "source": "m_noun",
+          "target": "m_verb"
+        },{
+          "type": "subject_to",
+          "source": "m_loc",
+          "target": "m_verb"
+        }]
+    },
+    "nacs": []
+  },
+  {
+    "id": "perp_noun_verb",
+    "lhs": {
+      "objects": [{
+          "id": "outer_prev",
+          "type": "Module"
+        },{
+          "id": "m_prep",
+          "type": "Module"
+        },{
+          "id": "m_noun",
+          "type": "Module"
+        },{
+          "id": "m_verb",
+          "type": "Module"
+        },{
+          "id": "outer_next",
+          "type": "Module"
+        },{
+          "id": "preposition",
+          "type": "Preposition"
+        },{
+          "id": "noun",
+          "type": "Noun"
+        },{
+          "id": "verb",
+          "type": "Verb"
+        }],
+      "relations": [{
+          "type": "next_to",
+          "source": "outer_prev",
+          "target": "m_prep"
+        },{
+          "type": "next_to",
+          "source": "m_prep",
+          "target": "m_noun"
+        },{
+          "type": "next_to",
+          "source": "m_noun",
+          "target": "m_verb"
+        },{
+          "type": "next_to",
+          "source": "m_verb",
+          "target": "outer_next"
+        },{
+          "type": "is_preposition",
+          "source": "m_prep",
+          "target": "preposition"
+        },{
+          "type": "is_noun",
+          "source": "m_noun",
+          "target": "noun"
+        }]
+    },
+    "rhs": {
+      "objects": [{
+          "id": "outer_prev",
+          "type": "Module"
+        },{
+          "id": "m_prep",
+          "type": "Module"
+        },{
+          "id": "m_noun",
+          "type": "Module"
+        },{
+          "id": "m_verb",
+          "type": "Module"
+        },{
+          "id": "outer_next",
+          "type": "Module"
+        },{
+          "id": "preposition",
+          "type": "Preposition"
+        },{
+          "id": "noun",
+          "type": "Noun"
+        },{
+          "id": "verb",
+          "type": "Verb"
+        }],
+      "relations": [{
+          "type": "next_to",
+          "source": "outer_prev",
+          "target": "m_verb"
+        },{
+          "type": "next_to",
+          "source": "m_prep",
+          "target": "m_noun"
+        },{
+          "type": "next_to",
+          "source": "m_verb",
+          "target": "outer_next"
+        },{
+          "type": "is_preposition",
+          "source": "m_prep",
+          "target": "preposition"
+        },{
+          "type": "is_noun",
+          "source": "m_noun",
+          "target": "noun"
+        },{
+          "type": "subject_to",
+          "source": "m_prep",
+          "target": "m_verb"
+        },{
+          "type": "subject_to",
+          "source": "m_noun",
+          "target": "m_verb"
+        }]
+    },
+    "nacs": []
+  },
+    {
+    "id": "prep_noun",
+    "lhs": {
+      "objects": [{
+          "id": "m_prep",
+          "type": "Module"
+        },{
+          "id": "m_noun",
+          "type": "Module"
+        },{
+          "id": "outer_prev",
+          "type": "Module"
+        },{
+          "id": "outer_next",
+          "type": "Module"
+        },{
+          "id": "prep",
+          "type": "Preposition"
+        },{
+          "id": "noun",
+          "type": "Noun"
+        }],
+      "relations": [{
+          "type": "next_to",
+          "source": "outer_prev",
+          "target": "m_prep"
+        },{
+          "type": "next_to",
+          "source": "m_prep",
+          "target": "m_noun"
+        },{
+          "type": "next_to",
+          "source": "m_noun",
+          "target": "outer_next"
+        },{
+          "type": "is_preposition",
+          "source": "m_prep",
+          "target": "prep"
+        },{
+          "type": "is_noun",
+          "source": "m_noun",
+          "target": "noun"
+        }]
+    },
+    "rhs": {
+      "objects": [{
+          "id": "new_prep",
+          "type": "Module"
+        },{
+          "id": "m_prep",
+          "type": "Module"
+        },{
+          "id": "m_noun",
+          "type": "Module"
+        },{
+          "id": "outer_prev",
+          "type": "Module"
+        },{
+          "id": "outer_next",
+          "type": "Module"
+        },{
+          "id": "new_adverbial",
+          "type": "Module"
+        },{
+          "id": "prep",
+          "type": "Preposition"
+        },{
+          "id": "noun",
+          "type": "Noun"
+        },{
+          "id": "adverb",
+          "type": "Adverb"
+        }],
+      "relations": [{
+          "type": "next_to",
+          "source": "outer_prev",
+          "target": "new_adverbial"
+        },{
+          "type": "subject_to",
+          "source": "m_prep",
+          "target": "new_adverbial"
+        },{
+          "type": "subject_to",
+          "source": "m_noun",
+          "target": "new_adverbial"
+        },{
+          "type": "next_to",
+          "source": "new_adverbial",
+          "target": "outer_next"
+        },{
+          "type": "is_preposition",
+          "source": "m_prep",
+          "target": "prep"
+        },{
+          "type": "is_noun",
+          "source": "m_noun",
+          "target": "noun"
+        },{
+          "type": "is_preposition",
+          "source": "new_prep",
+          "target": "prep"
+        }, {
+          "type": "is_adverb",
+          "source": "new_adverbial",
+          "target": "adverb"
+        }]
+    },
+    "nacs": []
+  },
+  {
+    "id": "adverbial_verb",
+    "lhs": {
+      "objects": [{
+          "id": "m_advb",
+          "type": "Module"
+        },{
+          "id": "m_verb",
+          "type": "Module"
+        },{
+          "id": "outer_prev",
+          "type": "Module"
+        },{
+          "id": "outer_next",
+          "type": "Module"
+        },{
+          "id": "adverb",
+          "type": "Adverb"
+        },{
+          "id": "verb",
+          "type": "Verb"
+        }],
+      "relations": [{
+          "type": "next_to",
+          "source": "outer_prev",
+          "target": "m_advb"
+        },{
+          "type": "next_to",
+          "source": "m_advb",
+          "target": "m_verb"
+        },{
+          "type": "next_to",
+          "source": "m_verb",
+          "target": "outer_next"
+        },{
+          "type": "is_adverb",
+          "source": "m_advb",
+          "target": "adverb"
+        },{
+          "type": "is_verb",
+          "source": "m_verb",
+          "target": "verb"
+        }]
+    },
+    "rhs": {
+      "objects": [{
+          "id": "m_advb",
+          "type": "Module"
+        },{
+          "id": "m_verb",
+          "type": "Module"
+        },{
+          "id": "outer_prev",
+          "type": "Module"
+        },{
+          "id": "outer_next",
+          "type": "Module"
+        },{
+          "id": "new_verb",
+          "type": "Module"
+        },{
+          "id": "adverb",
+          "type": "Adverb"
+        },{
+          "id": "verb",
+          "type": "Verb"
+        }],
+      "relations": [{
+          "type": "next_to",
+          "source": "outer_prev",
+          "target": "new_verb"
+        },{
+          "type": "subject_to",
+          "source": "m_advb",
+          "target": "new_verb"
+        },{
+          "type": "subject_to",
+          "source": "m_verb",
+          "target": "new_verb"
+        },{
+          "type": "next_to",
+          "source": "new_verb",
+          "target": "outer_next"
+        },{
+          "type": "is_adverb",
+          "source": "m_advb",
+          "target": "adverb"
+        },{
+          "type": "is_verb",
+          "source": "m_verb",
+          "target": "verb"
+        },{
+          "type": "is_verb",
+          "source": "new_verb",
+          "target": "verb"
+        }]
+    },
+    "nacs": []
+  }
+]

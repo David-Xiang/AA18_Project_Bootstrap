@@ -1,0 +1,16 @@
+digraph {
+	Side [label=Side shape=box]
+	Farmer [label=Farmer shape=box]
+	Wolf [label=Wolf shape=box]
+	Goat [label=Goat shape=box]
+	Vegetable [label=Vegetable shape=box]
+	Goal [label=Goal shape=box]
+	StartingPoint [label=StartingPoint shape=box]
+	Farmer -> Side [label=on]
+	Wolf -> Side [label=on]
+	Goat -> Side [label=on]
+	Vegetable -> Side [label=on]
+	Side -> Goal [label=is]
+	Side -> StartingPoint [label=is]
+	Side -> Side [label="next to"]
+}

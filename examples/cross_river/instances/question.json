@@ -1,0 +1,60 @@
+{
+	"objects": [{
+		"id": "farmer",
+		"type": "Farmer"
+	},{
+		"id": "wolf",
+		"type": "Wolf"
+	},{
+		"id": "vegetable",
+		"type": "Vegetable"
+	},{
+		"id": "goat",
+		"type": "Goat"
+	},{
+		"id": "side1",
+		"type": "Side"
+	},{
+		"id": "side2",
+		"type": "Side"
+	},{
+		"id": "goal",
+		"type": "Goal"
+	},{
+		"id": "starting_point",
+		"type": "StartingPoint"
+	}],
+	"relations": [{
+		"type": "farmer_on_side",
+		"source": "farmer",
+		"target": "side1"
+	},{
+		"type": "wolf_on_side", 
+		"source": "wolf",
+		"target": "side1"
+	},{
+		"type": "goat_on_side", 
+		"source": "goat",
+		"target": "side1"
+	},{
+		"type": "vegetable_on_side", 
+		"source": "vegetable",
+		"target": "side1"
+	},{
+		"type": "next_to",
+		"source": "side1",
+		"target": "side2"
+	},{
+		"type": "next_to",
+		"source": "side2",
+		"target": "side1"
+	},{
+		"type": "side_is_goal",
+		"source": "side2",
+		"target": "goal"
+	},{
+		"type": "side_is_starting_point",
+		"source": "side1",
+		"target": "starting_point"
+	}]
+}

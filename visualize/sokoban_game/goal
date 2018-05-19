@@ -1,0 +1,17 @@
+digraph {
+	graph [label=Goal labelloc=top]
+	node [shape=box]
+	subgraph cluster_nac_0 {
+		graph [label="nac 0" style=dotted]
+		nac_0_box [label="<<nac>>
+box:Box" color="#666666" fontcolor="#666666"]
+		nac_0_tile [label="<<nac>>
+tile:Tile" color="#666666" fontcolor="#666666"]
+		nac_0_trivial [label="<<nac>>
+trivial:Trivial" color="#666666" fontcolor="#666666"]
+		nac_0_box -> nac_0_tile [label="<<nac>>
+on" color="#666666" fontcolor="#666666"]
+		nac_0_tile -> nac_0_trivial [label="<<nac>>
+is" color="#666666" fontcolor="#666666"]
+	}
+}

@@ -1,0 +1,15 @@
+digraph {
+	graph [label=Goal labelloc=top]
+	node [shape=box]
+	farmer [label="farmer:Farmer"]
+	wolf [label="wolf:Wolf"]
+	vegetable [label="vegetable:Vegetable"]
+	goat [label="goat:Goat"]
+	side [label="side:Side"]
+	goal [label="goal:Goal"]
+	farmer -> side [label=on]
+	wolf -> side [label=on]
+	goat -> side [label=on]
+	vegetable -> side [label=on]
+	side -> goal [label=is]
+}

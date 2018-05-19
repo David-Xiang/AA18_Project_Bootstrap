@@ -1,0 +1,69 @@
+{
+	"graph": {
+      "objects": [{
+          "id": "H",
+          "type": "Module"
+        },{
+          "id": "S",
+          "type": "Module"
+        },{
+          "id": "V",
+          "type": "Module"
+        },{
+          "id": "O",
+          "type": "Module"
+        },{
+          "id": "T",
+          "type": "Module"
+        },{
+          "id": "noun",
+          "type": "Noun"
+        },{
+          "id": "verb",
+          "type": "Verb"
+        },{
+          "id": "head",
+          "type": "Head"
+        },{
+          "id": "tail",
+          "type": "Tail"
+        }],
+      "relations": [{
+          "type": "next_to",
+          "source": "H",
+          "target": "S"
+        },{
+          "type": "next_to",
+          "source": "S",
+          "target": "V"
+        },{
+          "type": "next_to",
+          "source": "V",
+          "target": "O"
+        },{
+          "type": "next_to",
+          "source": "O",
+          "target": "T"
+        },{
+          "type": "is_head",
+          "source": "H",
+          "target": "head"
+        },{
+          "type": "is_noun",
+          "source": "S",
+          "target": "noun"
+        },{
+          "type": "is_verb",
+          "source": "V",
+          "target": "verb"
+        },{
+          "type": "is_noun",
+          "source": "O",
+          "target": "noun"
+        },{
+          "type": "is_tail",
+          "source": "T",
+          "target": "tail"
+        }]
+    }
+}

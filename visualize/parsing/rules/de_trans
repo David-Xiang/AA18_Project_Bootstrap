@@ -1,0 +1,41 @@
+digraph {
+	graph [label=de_trans labelloc=top]
+	node [shape=box]
+	prev [label="<<preserve>>
+prev:Module" color="#0033CC" fontcolor="#0033CC"]
+	next [label="<<preserve>>
+next:Module" color="#0033CC" fontcolor="#0033CC"]
+	outer_prev [label="<<preserve>>
+outer_prev:Module" color="#0033CC" fontcolor="#0033CC"]
+	outer_next [label="<<preserve>>
+outer_next:Module" color="#0033CC" fontcolor="#0033CC"]
+	m_de [label="<<preserve>>
+m_de:Module" color="#0033CC" fontcolor="#0033CC"]
+	de [label="<<preserve>>
+de:DE" color="#0033CC" fontcolor="#0033CC"]
+	outer_prev -> prev [label="<<delete>>
+next to" color="#FF0000" fontcolor="#FF0000"]
+	prev -> m_de [label="<<delete>>
+next to" color="#FF0000" fontcolor="#FF0000"]
+	m_de -> next [label="<<delete>>
+next to" color="#FF0000" fontcolor="#FF0000"]
+	next -> outer_next [label="<<preserve>>
+next to" color="#0033CC" fontcolor="#0033CC"]
+	m_de -> de [label="<<preserve>>
+is" color="#0033CC" fontcolor="#0033CC"]
+	subgraph cluster_nac_0 {
+		graph [label="nac 0" style=dotted]
+		nac_0_noun [label="<<nac>>
+noun:Noun" color="#666666" fontcolor="#666666"]
+		prev -> nac_0_noun [label="<<nac>>
+is" color="#666666" fontcolor="#666666"]
+		outer_prev -> nac_0_noun [label="<<nac>>
+is" color="#666666" fontcolor="#666666"]
+	}
+	outer_prev -> next [label="<<create>>
+next to" color="#00CC33" fontcolor="#00CC33"]
+	prev -> m_de [label="<<create>>
+subject to" color="#00CC33" fontcolor="#00CC33"]
+	m_de -> next [label="<<create>>
+subject to" color="#00CC33" fontcolor="#00CC33"]
+}

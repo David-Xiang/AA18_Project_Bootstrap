@@ -1,0 +1,22 @@
+digraph {
+	graph [label=farmer_carry_goat labelloc=top]
+	node [shape=box]
+	farmer [label="<<preserve>>
+farmer:Farmer" color="#0033CC" fontcolor="#0033CC"]
+	goat [label="<<preserve>>
+goat:Goat" color="#0033CC" fontcolor="#0033CC"]
+	side1 [label="<<preserve>>
+side1:Side" color="#0033CC" fontcolor="#0033CC"]
+	side2 [label="<<preserve>>
+side2:Side" color="#0033CC" fontcolor="#0033CC"]
+	farmer -> side1 [label="<<delete>>
+on" color="#FF0000" fontcolor="#FF0000"]
+	goat -> side1 [label="<<delete>>
+on" color="#FF0000" fontcolor="#FF0000"]
+	side1 -> side2 [label="<<preserve>>
+next to" color="#0033CC" fontcolor="#0033CC"]
+	farmer -> side2 [label="<<create>>
+on" color="#00CC33" fontcolor="#00CC33"]
+	goat -> side2 [label="<<create>>
+on" color="#00CC33" fontcolor="#00CC33"]
+}
