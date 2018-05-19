@@ -19,16 +19,16 @@
 
 运行`python3 Solve.py`，可以查看调用**GTS**解决推箱子、过河问题、句法分析的结果：
 
-1. 对于推箱子、过河问题，将会按照顺序输出为了解决问题，每一步所应用的rule
+1. 对于推箱子、过河问题，将会按照顺序输出为了解决问题，每一步所应用的rule。
 2. 对于句法分析问题，还会自动在`examples/parsing/`目录下生成`result.json`，自动在`visualize/parsing/`目录下生成`result.png`。
 
-详情可见`Solve.py`源代码
+详情可见`Solve.py`源代码。
 
 ## Parsing Problem 句法分析
 
 ### 说明
 
-我们试图采用GTS模型来解决中文句法分析的问题。
+我们试图采用GTS模型来解决中文句法分析的问题。亦可参见`GTS_Presentation.pdf`。
 
 利用分词工具，对给定句子进行分词，得到的词语列表看作是语义模块的列表。
 
