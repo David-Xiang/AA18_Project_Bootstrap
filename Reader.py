@@ -106,24 +106,26 @@ class Reader:
 
 if __name__ == "__main__":
     '''test Reader'''
-    print("------------")
-    print("TEST metamodelToGraph")
-    g = Reader.metamodelToGraph("metamodel.json")
-    g.print()
+    #print("------------")
+    #print("TEST metamodelToGraph")
+    #g = Reader.metamodelToGraph("metamodel.json")
+    #g.print()
 
     print("------------")
     print("TEST quesionToGraph")
-    g1 = Reader.questionToGraph("trival.json")
+    g1 = Reader.questionToGraph("./examples/parsing/instances/trivialHard.json")
+    import sys
+    print(sys.getsizeof(g1))
     g1.print()
 
-    print("------------")
-    print("TEST rulesToMatches")
-    rules = Reader.rulesToRules("rules.json")
-    for rule in rules:
-        print("------------")
-        rule.print()
+    #print("------------")
+    #print("TEST rulesToMatches")
+    #rules = Reader.rulesToRules("rules.json")
+    #for rule in rules:
+    #    print("------------")
+    #    rule.print()
 
-    print("------------")
-    print("TEST goalToRule")
-    goal = Reader.goalToRule("goal.json")
-    goal.print()
+    #print("------------")
+    #print("TEST goalToRule")
+    #goal = Reader.goalToRule("goal.json")
+    #goal.print()

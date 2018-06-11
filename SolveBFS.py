@@ -13,13 +13,16 @@ class QueueElem:
         self.path = path
 
 def bfs(question, rules, goal):
+    cnt = 0
     queue = [QueueElem(question, [])]
+
     while len(queue) > 0:
         temp = queue[0]
         graph = temp.graph
         path = temp.path
 
         if len(Maper.getMaps(graph, goal)) != 0:
+            print("Solved this question by visiting %d states!" % cnt)
             return (graph, path)
 
         for rule in rules:
@@ -31,6 +34,7 @@ def bfs(question, rules, goal):
                 queue.append(QueueElem(ng, np))
 
         queue.remove(temp)
+        cnt += 1
 
     return []
 
@@ -65,7 +69,7 @@ if __name__ == "__main__":
     # 解句法分析问题，输出match goal.json的图（可视化成图片）
     print("------------")
     print("Solution for 句法分析")
-    question = Reader.questionToGraph("examples/parsing/instances/trivial.json")
+    question = Reader.questionToGraph("examples/parsing/instances/trivial1.json")
     rules = Reader.rulesToRules("examples/parsing/rules.json")
     goal = Reader.goalToRule("examples/parsing/goal.json")
     (goalGraph, path) = bfs(question, rules, goal)

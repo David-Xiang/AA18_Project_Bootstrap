@@ -1,7 +1,9 @@
 # coding: utf-8
 
 class Graph:
-    '''允许重复边的有向图模型'''
+    '''允许重复边的有向图模型
+       TODO：将所有的字符串存入静态变量中，减少class实例的大小，和创建对象的消耗
+    '''
 
     class Vertex:
         '''connList为字典：键为本顶点对应的ToVertex的id，值为确定fromVertex和toVertex的出边列表'''
