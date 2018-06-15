@@ -41,7 +41,7 @@ def astar(question, rules, goal):
                 q.put(QueueElem(ng, np))
         cnt += 1
     
-    return []
+    return None
 
 
 if __name__ == "__main__":
